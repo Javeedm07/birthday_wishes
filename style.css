@@ -1,0 +1,163 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f3e7e9, #e3eeff);
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.greeting {
+  margin-bottom: 20px;
+}
+
+.greeting h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #b15d70;
+}
+
+.greeting p {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 300;
+}
+
+.message {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.wish-section {
+  margin-top: 20px;
+}
+
+.wish-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px 0;
+}
+
+.wish-text {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.music-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #b15d70;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.music-btn:hover {
+  background-color: #a14c62;
+}
+
+@media screen and (max-width: 767px) {
+  .greeting h1 {
+    font-size: 2rem;
+  }
+
+  .greeting p {
+    font-size: 1rem;
+  }
+
+  .message {
+    font-size: 1rem;
+    margin: 10px;
+  }
+
+  .wish-image {
+    max-width: 250px;
+  }
+
+  .wish-text {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    text-align: left;
+  }
+
+  .greeting {
+    max-width: 45%;
+    text-align: left;
+  }
+
+  .greeting h1 {
+    font-size: 3rem;
+  }
+
+  .greeting p {
+    font-size: 1.5rem;
+  }
+
+  .message {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .wish-section {
+    max-width: 45%;
+    text-align: left;
+  }
+
+  .wish-image {
+    max-width: 400px;
+    margin: 20px 0;
+  }
+
+  .wish-text {
+    font-size: 1.2rem;
+    max-width: 500px;
+  }
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+  animation: fade 1s ease-in-out;
+}
